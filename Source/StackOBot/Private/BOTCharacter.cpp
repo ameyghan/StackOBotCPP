@@ -310,6 +310,7 @@ void ABOTCharacter::ToggleJetpack(bool Reset, bool Activate)
 	FBOTScreenLogger::AddOnScreenDebugMessage(14, ELogVerbosity::Display, *FString::Printf(TEXT("Jetpack Active : %s"), ((Activate) ? (TEXT("True") ): (TEXT("False")))));
 	if (Reset == true )
 	{
+		// TODO convert to GameplayTags once testing passes 100%
 		if (JetpackState == EJetpackState::EJS_CoolingOff)
 		{
 			return;
