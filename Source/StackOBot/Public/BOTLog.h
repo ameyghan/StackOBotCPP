@@ -30,7 +30,7 @@ public:
 	{
 		return
 	   (Verbosity == ELogVerbosity::Fatal	||  Verbosity	== ELogVerbosity::Error)	   ? FColor::Red	:
-	   (Verbosity == ELogVerbosity::Warning)											   ? FColor::Yellow	:
+	   (Verbosity == ELogVerbosity::Warning)						   ? FColor::Yellow	:
 	   (Verbosity == ELogVerbosity::Display ||  Verbosity	== ELogVerbosity::Log)		   ? FColor::White	:
 	   (Verbosity == ELogVerbosity::Verbose ||  Verbosity	== ELogVerbosity::VeryVerbose) ? FColor::Orange	:
 																							 FColor::Cyan;
