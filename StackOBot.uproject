@@ -5,11 +5,6 @@
 	"Description": "",
 	"Modules": [
 		{
-			"Name": "StackOBotStartup",
-			"Type": "ClientOnly",
-			"LoadingPhase": "PreLoadingScreen"
-		},
-		{
 			"Name": "StackOBot",
 			"Type": "Runtime",
 			"LoadingPhase": "Default",
