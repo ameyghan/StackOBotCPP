@@ -27,14 +27,14 @@ UENUM(BlueprintType)
 enum class EJetpackState : uint8
 {
 	EJS_Inactive		UMETA(DisplayName = "Inactive"),
-	EJS_Ready		UMETA(DisplayName = "Ready"),
+	EJS_Ready			UMETA(DisplayName = "Ready"),
 	EJS_Activated		UMETA(DisplayName = "Active"),
-	EJS_InAir		UMETA(DisplayName = "InAir"),
+	EJS_InAir			UMETA(DisplayName = "InAir"),
 	EJS_Deactivated		UMETA(DisplayName = "Deactivated"),
 	EJS_CoolingOff		UMETA(DisplayName = "CollingOff"),
 	EJS_Recharging		UMETA(DisplayName = "Recharging"),
 
-	UES_MAX			UMETA(DisplayName = "DefaultMAX")
+	UES_MAX				UMETA(DisplayName = "DefaultMAX")
 };
 
 UCLASS(config=Game)

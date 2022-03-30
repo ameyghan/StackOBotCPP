@@ -34,6 +34,9 @@ void ABOTPlayerControllerInGame::BeginPlay()
 	}
 }
 
+//	Note that this is a really messy way of setting up input as we have input being driven in 2 different places (one on the character and one here) 
+// This is done just so the project is identical to the Blueprint veresion. 
+// Notmally the controlls have to be setup all in one place, preferably inside a controller and then added to the character as a component. 
 void ABOTPlayerControllerInGame::SetupInputComponent()
 {
 	Super::SetupInputComponent();
