@@ -12,6 +12,7 @@ UBOTLoadingScreenWidget::UBOTLoadingScreenWidget(const FObjectInitializer& Objec
 void UBOTLoadingScreenWidget::NativeTick(const FGeometry& MyGeometry, float InDeltaTime)
 {
 	Super::NativeTick(MyGeometry, InDeltaTime);
+	// The Do-Once is replaced by a bool flag
 	if (FMath::IsNearlyEqual(ColorAndOpacity.A, TargetAlpha, 0.0001f))
 	{
 		SetColorAndOpacity(FLinearColor(1.0f, 1.0f, 1.0f, TargetAlpha));
